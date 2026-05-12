@@ -7,15 +7,14 @@
     android:layout_height="match_parent"
     tools:context=".ui.dashboard.DashboardFragment">
 
-
     <TextView
         android:id="@+id/text_dashboard"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:text="Cadastro de ..."
         android:textAlignment="center"
         android:textSize="20sp"
-        android:text="Cadastro de ..."
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -43,25 +42,31 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/image_item" />
 
-
     <EditText
         android:id="@+id/enderecoItemEditText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="Endereço"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_select_image"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button_select_image" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
+    <EditText
+        android:id="@+id/registerDescricaoEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Descrição"
+        app:layout_constraintTop_toBottomOf="@id/enderecoItemEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/salvarItemButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Salvar"
-        app:layout_constraintTop_toBottomOf="@id/enderecoItemEditText"
+        app:layout_constraintTop_toBottomOf="@id/registerDescricaoEditText"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
